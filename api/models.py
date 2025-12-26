@@ -30,5 +30,5 @@ class Matricula(models.Model):
     codigo = models.AutoField(primary_key=True)
     curso_codigo = models.ForeignKey(Curso, on_delete=models.CASCADE, related_name='matriculas')
     alumno_rut = models.ForeignKey(Alumno, on_delete=models.CASCADE, related_name='matriculas')
-    sucrusal_codigo = models.ForeignKey(Sucursal, on_delete=models.CASCADE, related_name='matriculas')
+    sucursal_codigo = models.ForeignKey(Sucursal, on_delete=models.CASCADE, related_name='matriculas')
     fecha = models.DateField()
